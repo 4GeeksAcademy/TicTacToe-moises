@@ -1,12 +1,196 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #01014f;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-/* 
+h1.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.setup-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #1e3a5f;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
 
-*/
+.setup-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #ff7043;
+  padding-bottom: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.setup-container .victory-message {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.player-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.player-input {
+  flex-grow: 1;
+  min-width: 120px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.symbol-selection {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  max-width: 180px;
+}
+
+.symbol-selection button {
+  flex-grow: 1;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 60px;
+  text-align: center;
+}
+
+.symbol-selection button.active {
+  background-color: #ff7043;
+  color: white;
+}
+
+.symbol-selection button:hover {
+  background-color: #f0f0f0;
+}
+
+.start-button {
+  background-color: #ff7043;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #f4511e;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.game-board h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.square-button {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  background-color: #1e3a5f;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-button i {
+  font-size: 48px;
+  color: #fff;
+}
+
+.square-button:hover {
+  background-color: #3c6e8f;
+}
+
+.square-button:focus {
+  outline: none;
+}
+
+.restart-button {
+  background-color: #ff7043;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #f4511e;
+}
